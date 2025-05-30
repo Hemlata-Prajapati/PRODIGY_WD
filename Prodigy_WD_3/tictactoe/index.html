@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <h1>Tic-Tac-Toe Game</h1>
+
+  <div id="player-names">
+    <label>
+      Player 1 (X):
+      <input type="text" id="player1-name" placeholder="Enter Player 1 name" />
+    </label>
+    <label>
+      Player 2 (O):
+      <input type="text" id="player2-name" placeholder="Enter Player 2 name" />
+    </label>
+  </div>
+
+  <div id="set-names-container">
+    <button class="button" onclick="setNames()">Set Names</button>
+  </div>
+
+  <div id="result-container">
+    <p id="result">
+      Player 1: X <br />
+      Player 2: O
+    </p>
+  </div>
+
+  <div id="box">
+    <table>
+      <tr>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b1" aria-label="Top left cell"></button></td>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b2" aria-label="Top middle cell"></button></td>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b3" aria-label="Top right cell"></button></td>
+      </tr>
+      <tr>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b4" aria-label="Middle left cell"></button></td>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b5" aria-label="Center cell"></button></td>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b6" aria-label="Middle right cell"></button></td>
+      </tr>
+      <tr>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b7" aria-label="Bottom left cell"></button></td>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b8" aria-label="Bottom middle cell"></button></td>
+        <td><button class="tic-tac-toe" onclick="game(this)" id="b9" aria-label="Bottom right cell"></button></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="controls">
+    <button type="button" onclick="replay()" class="button">Replay Game</button>
+    <button type="button" onclick="toggleAI()" class="button" id="ai-toggle-btn">Play with AI: OFF</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

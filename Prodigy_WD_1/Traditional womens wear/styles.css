@@ -1,0 +1,315 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #6A0DAD; /* Dark Purple */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav{
+    position: relative;
+    /*background: #222;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    position: relative;
+    display: inline;
+    font-size: lem;
+    font-weight: 500;
+    padding: 0 4px;
+    color: #ffffff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #B19CD9, #C9C3E3); /* Soft Lavender Gradient */
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    border: none;
+    background: #7851A9; /* Royal Purple */
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background: #6A0DAD;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+/* Collections */
+.collections{
+    background: linear-gradient(to bottom, #c2a8f3, #C9C3E3, #e5d5f8);
+    padding: 20px;
+}
+
+.collections h2{
+    text-align: center;
+    font-size: 32px;
+}
+
+.collections ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.collections li {
+    background: rgb(246, 233, 248);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 0.3; /* Ensures equal width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distributes space evenly */
+    min-height: 300px; /* Set a fixed height for all cards */
+}
+
+.collections li:hover {
+    box-shadow: 0 4px 15px rgba(208, 195, 195, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+/* Uniform Image Size */
+.collections img {
+    width: 100%; /* Responsive Width */
+    height: 250px; /* Fixed Height */
+    object-fit: contain; /* Crop to Fit */
+    border-radius: 8px;
+   /* overflow-clip-margin: content-box;*/
+    vertical-align: middle;
+}
+
+.collections a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Style for h3 and p inside links */
+.collections a h3,
+.collections a p {
+    color: #333; /* Set a custom color (black or any other color) */
+    margin: 5px 0;
+}
+
+/* On hover, only change background and scale effect */
+.collections a:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.collections a h3:hover {
+    color: #8604bd; /* Set a custom color (black or any other color) */
+    margin: 5px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #d6b5f6, #f8def4); /* Soft gradient */
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #6A0DAD; /* Deep purple */
+}
+
+/* Testimonials Container */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Testimonial */
+.testimonial {
+    background: content-box;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial p {
+    font-style: italic;
+    font-size: 18px;
+    color: #444;
+}
+
+.testimonial cite {
+    text-align: right;
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #6A0DAD;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    color: white;
+    padding-top: 20px; 
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    box-shadow: 0 3px 9px rgba(249, 191, 238, 0.3);
+}
+
+/* Explore Page Hero Section */
+.explore-hero {
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #B19CD9, #C9C3E3);
+    color: white;
+}
+
+/* Collections Sections */
+.explore-collections {
+    text-align: center;
+    padding: 40px;
+    background: #f9f9f9;
+}
+
+.explore-collections h2 {
+    font-size: 28px;
+    color: #6A0DAD;
+    margin-bottom: 20px;
+}
+
+/* Collection Grid */
+.collection-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.collection-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.collection-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.collection-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-out;
+}
+
+/* Call to Action Section */
+.cta {
+    text-align: center;
+    padding: 15px;
+    background: #6A0DAD;
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    background: #FFD700;
+    color: #6A0DAD;
+    padding: 4px 8px;
+    font-size: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #f3c623;
+}
