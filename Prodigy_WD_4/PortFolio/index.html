@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/a2e0b66a44.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav>
+    <h2>MyPortfolio</h2>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><button id="theme-toggle">🌙</button></li>
+    </ul>
+  </nav>
+
+  <header id="home">
+    <img src="assets/profile.jpg" alt="Profile" class="profile" />
+    <h1>Hello, I'm <span>Hemlata Prajapati</span></h1>
+    <p>Web Developer & Designer</p>
+    <a href="assets/resume.pdf" download class="btn"><i class="fas fa-download"></i> Download CV</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I build responsive websites and love coding modern web apps.</p>
+    <p>Motivated MSc IT student with strong proficiency in HTML, CSS, JavaScript, Python, and Database Management (DBMS).   </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+        <div class="projects-grid">
+            <a class="project" href="https://yourproject-link1.com" target="_blank" rel="noopener">
+                <img src="assets/project1.png" alt="Project 1" />
+                <p>Traditional Women’s Wear</p>
+            </a>
+
+            <a class="project" href="https://yourproject-link2.com" target="_blank" rel="noopener">
+                <img src="assets/project2.png" alt="Project 2" />
+                <p>StopWatch</p>
+            </a>
+
+            <a class="project" href="https://yourproject-link3.com" target="_blank" rel="noopener">
+                <img src="assets/project3.png" alt="Project 3" />
+                <p>Tic-Tac-Toe</p>
+            </a>
+
+            <a class="project" href="https://yourproject-link4.com" target="_blank" rel="noopener">
+                <img src="assets/project4.png" alt="Project 4" />
+                <p>Portfolio</p>
+            </a>
+
+            <a class="project" href="https://yourproject-link5.com" target="_blank" rel="noopener">
+                <img src="assets/project5.png" alt="Project 5" />
+                <p>Weather App</p>
+            </a>
+
+            <a class="project" href="https://hemlata-prajapati.github.io/GYM_website/" target="_blank" rel="noopener">
+                <img src="assets/project6.png" alt="Project 6" />
+                <p>Gym Website</p>
+            </a>
+
+            <a class="project" href="https://hemlata-prajapati.github.io/sable/" target="_blank" rel="noopener">
+                <img src="assets/project7.png" alt="Project 7" />
+                <p>Sable Cards</p>
+            </a>
+        </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Hemlata. All rights reserved.</p>
+  </footer>
+</body>
+</html>
